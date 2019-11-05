@@ -1,0 +1,107 @@
+.contact {
+  padding: 65px 15px 150px 15px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 80px 80px 130px 80px;
+  }
+
+  &__title, .contact-details__title {
+    font-size: 48px;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    margin-top: 60px;
+    font-size: 16px;
+  }
+}
+
+.map-responsive {
+  margin: 110px 0 80px 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 520px;
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contact-details {
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 55px;
+    margin-top: 85px;
+    text-align: left;
+
+    @media (min-width: 768px) {
+      margin-top: 55px;
+      padding: 0;
+      justify-content: space-between;
+    }
+  }
+}
+
+.contact-details__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 50px;
+  font-size: 30px;
+
+  @media (min-width: 768px) {
+    width: 40%;
+    justify-content: center;
+  }
+
+  &-address {
+    @media (min-width: 768px) {
+      order: -1;
+      width: 61%;
+      margin: 0 auto 50px;
+    }
+  }
+}
+
+.phone-icon, .email-icon, .address-icon {
+  color: @primary-web-color;
+  margin-right: 20px;
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    font-size: @small-font-size;
+  }
+}
+
+.phone, .email, .address {
+  width: 45%;
+  font-size: 30px;
+  text-decoration: none;
+  color: #9d9c9c;
+  text-align: left;
+
+  @media (min-width: 768px) {
+    font-size: @small-font-size;
+    width: 80%;
+  }
+}
+
+
+.address p span {
+  vertical-align: super;
+  font-size: 20px;
+}

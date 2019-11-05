@@ -1,0 +1,29 @@
+.talk {
+  padding: 90px 15px 85px 15px;
+  background-color: #7a7a7a;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 90px 80px 65px 80px;
+  }
+
+  &__title {
+    font: 400 60px @main-font-family;
+    color: #fff;
+
+    span {
+      color: @primary-web-color;
+    }
+  }
+
+  &__text{
+    margin-top: 55px;
+    font: 400 @big-font-size @second-font-family;
+    color: #fff;
+    line-height: 25px;
+
+    @media (min-width: 768px) {
+      font-size: @small-font-size;
+    }
+  }
+}

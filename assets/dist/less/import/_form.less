@@ -1,0 +1,40 @@
+.contact-form {
+}
+
+.form__name, .form__email, .form__message {
+  width: 100%;
+  height: 100%;
+  min-height: 50px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font: 400 @small-font-size @main-font-family;
+  background-color: #f0f0f0;
+  border: 1px solid #cac6c6;
+}
+
+.form__message {
+  min-height: 170px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  resize: none;
+}
+
+.button-submit {
+  width: 100%;
+  max-width: 310px;
+  margin-top: 25px;
+  padding: 10px 0 20px 0;
+  font: 400 20px @second-font-family;
+  color: @extra-light-text-color;
+  border-radius: 5px;
+  background-color: @primary-web-color;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #7a7a7a;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 390px;
+  }
+}

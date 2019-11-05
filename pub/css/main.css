@@ -480,6 +480,10 @@ a {
   opacity: 0;
   z-index: 100;
 }
+.recent-projects__link:hover {
+  background-color: #000;
+  opacity: 0.1;
+}
 .talk {
   padding: 90px 15px 85px 15px;
   background-color: #7a7a7a;
